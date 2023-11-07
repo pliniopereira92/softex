@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Pessoa</title>
+</head>
+<body>
+    <h2>Cadastro de Pessoa</h2>
+    <form id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="Insira seu nome"><br><br>
+
+        <label for="salario">Salário:</label>
+        <input type="number" id="salario" name="salario" value=""><br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" value=""><br><br>
+
+        <label for="possuiDiploma">Possui Diploma:</label>
+        <input type="checkbox" id="possuiDiploma" name="possuiDiploma"><br><br>
+
+        <input type="button" value="Enviar" onclick="exibirCadastro()">
+    </form>
+
+    <div id="resultado"></div>
+
+    <script>
+        function exibirCadastro() {
+            var nome = document.getElementById('nome').value;
+            var salario = parseFloat(document.getElementById('salario').value);
+            var idade = parseInt(document.getElementById('idade').value);
+            var possuiDiploma = document.getElementById('possuiDiploma').checked;
+
+            var resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.innerHTML = '<h3>Resultado do Cadastro:</h3>' +
+                '<p><strong>Nome:</strong> ' + nome + '</p>' +
+                '<p><strong>Salário:</strong> ' + salario + '</p>' +
+                '<p><strong>Idade:</strong> ' + idade + '</p>' +
+                '<p><strong>Possui Diploma:</strong> ' + (possuiDiploma ? 'Sim' : 'Não') + '</p>';
+        }
+    </script>
+</body>
+</html>

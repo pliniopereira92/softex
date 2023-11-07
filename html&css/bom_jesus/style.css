@@ -1,0 +1,79 @@
+body{
+    background-color: #735F66;
+    
+}
+
+h2 {
+    color: rgb(129, 218, 240);
+}
+
+h3 {
+    color: #B4BF8A;
+    font-family: 'Sedgwick Ave Display', cursive;
+    display: flex; 
+    align-items: center ; 
+    justify-content: center; 
+    margin: 0 auto;
+}
+
+h4{
+    color: brown;
+}
+
+#ir{
+    font-weight: bold;
+}
+
+#voltar{
+    font-weight: bold;
+}
+
+#res{
+    background-color: rgb(0, 85, 57);
+    height: 200px; 
+    width: 200px; 
+    margin: 0 auto; 
+    font-family: 'Sedgwick Ave Display', cursive;
+    display: flex; 
+    align-items: center ; 
+    justify-content: center; 
+    font-size: 12px
+    /* display flex fez com que os codigos align-items, justify-content funcionassem 
+    align-items alinha o texto verticalmente
+    justify-content alinha o texto horizontalmente */
+}
+
+mark{
+    background-color: rgb(241, 6, 6);
+}
+
+ol{
+    color: blue;
+}
+
+ul{
+    color: red;
+}
+
+#compras{
+    font-size: 30px;
+}
+
+#travesseiro{
+    display: none;
+}
+
+/* #text {
+    background-color: #D9C7D4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+} */
+
+.info{
+    font-size: large;
+    color: black;
+    font-style: italic;
+}

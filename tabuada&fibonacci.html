@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada ou Fibonacci</title>
+</head>
+
+<body>
+    <p>
+        Insira um numero
+    </p>
+    <p>
+        <label for="numero">Digite quantos numeros deseja mostrar:</label>
+        <input type="number" id="numero" name="numero">
+        <br>
+        <label for="op">Digite a opçâo desejada: 1 - Tabuada | 2 - Fibonacci</label>
+        <input type="number" id="op" name="opcao">
+        <br>
+        <input type="button" value="Criar" onclick="criar()">
+    </p>
+    <script>
+        function criar() {
+            var txtn = document.querySelector('input#numero')
+            var n = Number(txtn.value)
+            var op = Number(document.querySelector("#op").value)
+            //forma mais simplificada de pegar uma variavel e transformar em número.
+            var vetor = []
+
+            switch (op) {
+                case 1:
+                    for (let i = 1; i <= n; i++) {
+
+                        document.write(i + "x" + 5 + "=" + i * 5 + "<br/>")
+                    }
+                    break
+
+                case 2:
+
+                    for (let i = 1; i <= n; i++) {
+                        if (i <= 2) {
+                            vetor[i] = i
+                        } else {
+                            vetor[i] = vetor[i - 1] + vetor[i - 2]
+                        }
+                        document.write(vetor[i] + "<br/>")
+                    }
+                    break
+                default:
+                    document.write("Digite uma opção válida. 1 ou 2")
+                    break
+            }
+        }
+
+        //shift + alt + F para indentar todo o codigo.
+    </script>
+</body>
+
+</html>

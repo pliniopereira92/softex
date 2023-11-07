@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula01_Modulo2</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Aqui, foi feito uma associação do html com o css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+    <!-- PÁGINA TRABALHADA EM SALA DE AULA, USANDO EXEMPLOS DE UTILIZÇÃO DO CSS PARA DIFERENTES MUDANÇAS DE ESTILO NA PAGINA HTML. -->
+</head>
+
+<body>
+    <div id="res">
+        <h1>
+            Recife&#x1F605;
+        </h1>
+    </div>
+    <input type="button" value="zoom" onmouseover="zoom()" onmouseout="zoomout()">
+    <!-- o evento onmouseover serve para criar um evento quando o mouse passa por cima do botao -->
+    <hr>
+    <h2>
+        Título 2
+    </h2>
+    <P class="info">PÁGINA TRABALHADA EM SALA DE AULA, USANDO EXEMPLOS DE UTILIZÇÃO DO CSS PARA DIFERENTES MUDANÇAS DE ESTILO NA PAGINA HTML.</P>
+    <p>
+        <code>
+            <pre>
+                se (a=b), faça:
+                    b=c;
+                    c=d;
+                    se não, faça:
+                        a=c;
+                        b=d;
+                    dim se não;
+                fimse;
+            </pre>
+        </code>
+    </p>
+    <h3>
+        Título 3
+    </h3>
+    <div id="text">
+        <p>
+            <span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Repellat autem porro eum distinctio officia cupiditate
+            dolorem amet, illum expedita unde ea tempora iste eveniet quibusdam soluta quas beatae culpa veniam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, autem id pariatur soluta quisquam ipsam! Quis repellendus id sit iste repellat culpa perspiciatis fugiat, reprehenderit nisi incidunt tempora, laboriosam unde.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem doloribus dolores laudantium dolore at natus eligendi eos voluptas fugiat, nobis vitae quia molestiae doloremque temporibus odit. Ad ducimus cum consequatur.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum magni, quibusdam incidunt repellat sapiente enim assumenda autem sequi magnam omnis! Commodi doloribus impedit consequatur doloremque blanditiis repudiandae, recusandae suscipit consequuntur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima itaque hic quam quidem sapiente corporis repellendus? Excepturi nostrum dignissimos inventore fuga doloribus, corporis suscipit ea, vel repudiandae beatae accusantium enim!
+        </p>
+    </div>
+    <p>
+        
+        <strong>Lista ordenada</strong>
+        <ol>
+            <li>Acordar</li>
+            <li>Desligar despertador</li>
+            <li>beber agua</li>
+            <li>ir ao banheiro</li>
+            <li>fazer comida</li>
+            <li>....</li>
+            <li>sair de casa</li>
+        </ol>
+        <strong>Lista não ordenada</strong>
+        <ul>
+            <li>Acordar</li>
+            <li>desligar despertador</li>
+            <li>beber agua</li>
+            <li>ir ao banheiro</li>
+            <li>fazer comida</li>
+        </ul>
+    </p>
+    <p id="compras">
+        <strong><a href="./lista.html">Lista de Compras</a></strong>
+    </p>
+    <p id="ir">
+        <a href="./pagina2.html"><img src="./imagens/pagina2.png" width="120px" alt="página2"></a>
+    </p>
+    <!-- <h4>
+        Título 4
+        seleciona e usa o atalho ctrl + ; para comentar.
+    </h4> -->
+    <script>
+        function zoom() {
+            res.style.width = "500px"
+            res.style.fontSize = "20px"
+            res.style.background = "red"
+        }
+
+        function zoomout() {
+            res.style.width = "200px"
+            res.style.fontSize = "12px"
+            res.style.background = "aquamarine"
+        }
+    </script>
+</body>
+
+<!-- USAR O TRANSFORM: SCALE(1.X) PARA DAR UM ZOOM NA DIV -->
+</html>

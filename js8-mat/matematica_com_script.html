@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exceção Matemática</title>
+</head>
+<body>
+    <h2>Exceção Matemática</h2>
+    <label for="numero1">Número 1:</label>
+    <input type="" id="numero1"><br><br>
+
+    <label for="numero2">Número 2:</label>
+    <input type="" id="numero2"><br><br>
+
+    <button onclick="realizarCalculo()">Realizar Cálculo</button>
+    <div id="resultado"></div>
+
+    <script>
+        function realizarCalculo() {
+            var numero1 = parseFloat(document.getElementById('numero1').value);
+            var numero2 = parseFloat(document.getElementById('numero2').value);
+            var resultadoDiv = document.getElementById('resultado');
+
+            try {
+                if (isNaN(numero1) || isNaN(numero2)) {
+                    throw "Um dos valores não é um número válido.";
+                }
+                var resultado = numero1 / numero2;
+                if (!isFinite(resultado)) {
+                    throw "O resultado não é um número finito.";
+                }
+                resultadoDiv.innerHTML = "<p>O resultado da divisão é: " + resultado + "</p>";
+            } catch (error) {
+                resultadoDiv.innerHTML = "<p>Ocorreu um erro: " + error + "</p>";
+            } finally {
+                console.log("Operação concluída.");
+            }
+        }
+    </script>
+</body>
+</html>

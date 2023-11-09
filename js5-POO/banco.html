@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conta Bancária</title>
+</head>
+<body>
+    <h2>Conta Bancária</h2>
+    <button onclick="mostrarInfo()">Mostrar Informações da Conta</button>
+    <div id="informacoes"></div>
+    <br><br>
+
+    <label for="valorDeposito">Valor para depósito:</label>
+    <input type="number" id="valorDeposito"><br><br>
+
+    <label for="valorSaque">Valor para saque:</label>
+    <input type="number" id="valorSaque"><br><br>
+
+    <button onclick="executarOperacoes()">Executar Operações Bancárias</button>
+    <div id="resultado"></div>
+
+    <script src="banco.js"></script>
+</body>
+</html>
